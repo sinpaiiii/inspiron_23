@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,7 +30,9 @@ body {
   background-color: hsl(198deg, 100%, 6%);
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none;
   color: hsl(0deg, 0%, 100%);
 }
@@ -81,13 +85,16 @@ li {
   transition: all 700ms ease-in-out;
   width: 20px;
 }
-.btn:hover, .btn:visited {
+.btn:hover,
+.btn:visited {
   color: hsl(0deg, 0%, 100%);
 }
-.btn:hover span, .btn:visited span {
+.btn:hover span,
+.btn:visited span {
   transform: translateX(15px);
 }
-.btn:hover svg, .btn:visited svg {
+.btn:hover svg,
+.btn:visited svg {
   transform: translateX(600px);
 }
 
@@ -235,7 +242,7 @@ li {
 }
 .image-box img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -278,6 +285,7 @@ li {
   color: hsl(0deg, 0%, 100%);
   padding: 1rem 2rem;
   z-index: 9999;
+  opacity: 50%;
 }
 .primary-header .left-part {
   display: flex;
@@ -289,9 +297,7 @@ li {
   width: 50px;
   filter: grayscale(1) invert(1);
 }
-.primary-header .left-part .logo {
-  display: none;
-}
+
 .primary-header .left-part .logo h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -312,7 +318,8 @@ li {
   letter-spacing: 1px;
   background-color: hsl(0deg, 0%, 10%);
   transition: all 1000ms ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 1rem;
 }
 .primary-header .right-part .navbar ul {
@@ -364,7 +371,8 @@ li {
 
 .banner {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -429,13 +437,15 @@ li {
   grid-template-columns: 1fr;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .about .main-container video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .tour {
@@ -490,7 +500,7 @@ li {
   align-items: center;
   flex-direction: row;
   -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
   color: hsl(167deg, 82%, 65%);
   text-decoration: underline;
 }
@@ -535,7 +545,12 @@ li {
 }
 
 .sale {
-  background: linear-gradient(to top left, rgba(17, 97, 106, 0.3), rgba(255, 255, 255, 0)), url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  background: linear-gradient(
+      to top left,
+      rgba(17, 97, 106, 0.3),
+      rgba(255, 255, 255, 0)
+    ),
+    url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -636,7 +651,7 @@ li {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .media .main-container .image h3 {
   transition: all 450ms ease-in-out;
@@ -689,17 +704,26 @@ li {
 .contact .main-container .btn-send:hover {
   background-color: hsl(167deg, 61%, 45%);
 }
-.contact .main-container .phone, .contact .main-container .name, .contact .main-container .message {
+.contact .main-container .phone,
+.contact .main-container .name,
+.contact .main-container .message {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.contact .main-container .phone label, .contact .main-container .name label, .contact .main-container .message label {
+.contact .main-container .phone label,
+.contact .main-container .name label,
+.contact .main-container .message label {
   font-size: 1.5rem;
   margin: 1rem 0;
   letter-spacing: 1.2px;
 }
-.contact .main-container .phone input, .contact .main-container .phone textarea, .contact .main-container .name input, .contact .main-container .name textarea, .contact .main-container .message input, .contact .main-container .message textarea {
+.contact .main-container .phone input,
+.contact .main-container .phone textarea,
+.contact .main-container .name input,
+.contact .main-container .name textarea,
+.contact .main-container .message input,
+.contact .main-container .message textarea {
   padding: 1rem 1.4rem;
   font-size: 1.3rem;
   border: 2px solid hsl(167deg, 82%, 65%);
@@ -708,15 +732,30 @@ li {
   color: hsl(167deg, 82%, 65%);
   resize: none;
 }
-.contact .main-container .phone input::-moz-placeholder, .contact .main-container .phone textarea::-moz-placeholder, .contact .main-container .name input::-moz-placeholder, .contact .main-container .name textarea::-moz-placeholder, .contact .main-container .message input::-moz-placeholder, .contact .main-container .message textarea::-moz-placeholder {
+.contact .main-container .phone input::-moz-placeholder,
+.contact .main-container .phone textarea::-moz-placeholder,
+.contact .main-container .name input::-moz-placeholder,
+.contact .main-container .name textarea::-moz-placeholder,
+.contact .main-container .message input::-moz-placeholder,
+.contact .main-container .message textarea::-moz-placeholder {
   color: hsl(0deg, 0%, 100%);
   opacity: 70%;
 }
-.contact .main-container .phone input:-ms-input-placeholder, .contact .main-container .phone textarea:-ms-input-placeholder, .contact .main-container .name input:-ms-input-placeholder, .contact .main-container .name textarea:-ms-input-placeholder, .contact .main-container .message input:-ms-input-placeholder, .contact .main-container .message textarea:-ms-input-placeholder {
+.contact .main-container .phone input:-ms-input-placeholder,
+.contact .main-container .phone textarea:-ms-input-placeholder,
+.contact .main-container .name input:-ms-input-placeholder,
+.contact .main-container .name textarea:-ms-input-placeholder,
+.contact .main-container .message input:-ms-input-placeholder,
+.contact .main-container .message textarea:-ms-input-placeholder {
   color: hsl(0deg, 0%, 100%);
   opacity: 70%;
 }
-.contact .main-container .phone input::placeholder, .contact .main-container .phone textarea::placeholder, .contact .main-container .name input::placeholder, .contact .main-container .name textarea::placeholder, .contact .main-container .message input::placeholder, .contact .main-container .message textarea::placeholder {
+.contact .main-container .phone input::placeholder,
+.contact .main-container .phone textarea::placeholder,
+.contact .main-container .name input::placeholder,
+.contact .main-container .name textarea::placeholder,
+.contact .main-container .message input::placeholder,
+.contact .main-container .message textarea::placeholder {
   color: hsl(0deg, 0%, 100%);
   opacity: 70%;
 }
@@ -920,4 +959,4 @@ footer .credit a {
   footer .main-container .main {
     padding: 0 0 0 5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
