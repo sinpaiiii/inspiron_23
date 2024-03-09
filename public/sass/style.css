@@ -283,7 +283,7 @@ li {
   align-items: center;
   background-color: hsl(0deg, 0%, 3%);
   color: hsl(0deg, 0%, 100%);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   z-index: 9999;
   opacity: 50%;
 }
@@ -294,18 +294,12 @@ li {
   gap: 1rem;
 }
 .primary-header .left-part img {
-  width: 50px;
+  width: 200px;
+  object-fit: cover;
+  object-position: 20% 10%;
   filter: grayscale(1) invert(1);
 }
 
-.primary-header .left-part .logo h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-}
-.primary-header .left-part .logo h1 span {
-  color: hsl(167deg, 82%, 65%);
-  letter-spacing: 2px;
-}
 .primary-header .right-part .navbar {
   opacity: 0;
   position: absolute;
@@ -372,7 +366,7 @@ li {
 .banner {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    url("https://i.pinimg.com/564x/88/f0/e5/88f0e5ba361b05a9cfcbf13c247a876f.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -388,7 +382,7 @@ li {
   text-align: left;
   line-height: 1.5;
 }
-.banner-text h1 {
+.banner-text h2 {
   font-size: 8vh;
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 2rem;
